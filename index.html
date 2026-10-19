@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4b104b">
+  <meta name="description" content="Sebuah kejutan kecil dan doa baik untuk Aisyah.">
+  <title>A Little Surprise for Aisyah Aini ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <div class="sparkles" aria-hidden="true"></div>
+  <div class="flight-decorations" id="flightDecorations" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#" id="homeLink" aria-label="Kembali ke awal">
+      for Aisyah Aini <span>♡</span>
+    </a>
+  </header>
+
+  <main>
+    <!-- LAYAR 1: AMPLOP -->
+    <section class="screen envelope-screen active"
+      id="screen-envelope"
+      aria-labelledby="openingTitle">
+
+      <p class="eyebrow">LITTLE SURPRISE</p>
+
+      <h1 id="openingTitle" class="script-title">
+        A letter for <span>Aisyah Aini</span>
+      </h1>
+
+      <p class="soft-copy">
+        Ada sedikit sesuatu yang ingin kusampaikan di hari spesialmu.
+      </p>
+
+      <button class="envelope-button" id="openEnvelope"
+        type="button" aria-label="Buka amplop">
+        <span class="envelope">
+          <span class="envelope-flap"></span>
+          <span class="envelope-paper">
+            <span>for you, Aisyah Aini ♡</span>
+          </span>
+          <span class="wax-seal">♡</span>
+        </span>
+      </button>
+
+      <p class="tap-hint">tap the envelope to open</p>
+    </section>
+
+    <!-- LAYAR 2: MENU UTAMA -->
+    <section class="screen menu-screen"
+      id="screen-menu"
+      aria-labelledby="menuTitle"
+      hidden>
+
+      <div class="scrapbook-intro">
+        <div class="decor decor-rose" aria-hidden="true">✿</div>
+
+        <div class="intro-paper">
+          <p class="eyebrow">TODAY IS YOUR DAY</p>
+
+          <h2 id="menuTitle" class="script-title">
+            Happy Birthday
+          </h2>
+
+          <p class="intro-name">Aisyah Aini <span>♡</span></p>
+
+          <p class="soft-copy">Semoga kamu suka yaaa.</p>
+        </div>
+
+        <div class="mini-polaroid polaroid-left">
+          <img class="photo-placeholder mini-photo photo-a"
+            src="assets/aisyah-5.jpeg"
+            alt="Foto Aisyah"
+            loading="eager">
+          <span>a little memory</span>
+        </div>
+
+        <div class="mini-polaroid polaroid-right">
+          <img class="photo-placeholder mini-photo photo-b"
+            src="assets/aisyah-6.jpeg"
+            alt="Foto Aisyah"
+            loading="eager">
+          <span>and affection</span>
+        </div>
+
+        <span class="butterfly butterfly-one" aria-hidden="true">🦋</span>
+        <span class="flower flower-one" aria-hidden="true">✿</span>
+      </div>
+
+      <button class="primary-button" id="showMenu" type="button">
+        Tap for surprise <span>♡</span>
+      </button>
+    </section>
+
+    <!-- LAYAR 3: PILIHAN -->
+    <section class="screen choices-screen"
+      id="screen-choices"
+      aria-labelledby="choicesTitle"
+      hidden>
+
+      <p class="eyebrow">TAKE YOUR TIME</p>
+
+      <h2 id="choicesTitle" class="script-title">
+        Choose your <span>surprise</span>
+      </h2>
+
+      <p class="soft-copy">Pilih yang kamu pengen buka duluan.</p>
+
+      <div class="choice-grid">
+        <button class="choice-card" data-go="photos" type="button">
+          <span class="choice-art camera-art" aria-hidden="true">📷</span>
+          <span class="choice-name">Photos</span>
+          <span class="choice-caption">About you</span>
+        </button>
+
+        <button class="choice-card" data-go="wishes" type="button">
+          <span class="choice-art letter-art" aria-hidden="true">💌</span>
+          <span class="choice-name">Wishes</span>
+          <span class="choice-caption">a note for you</span>
+        </button>
+
+        <button class="choice-card" data-go="playlist" type="button">
+          <span class="choice-art record-art" aria-hidden="true">
+            <span>♫</span>
+          </span>
+          <span class="choice-name">Playlist</span>
+          <span class="choice-caption">a song for today</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- LAYAR 4: GALERI FOTO -->
+    <section class="screen content-screen"
+      id="screen-photos"
+      aria-labelledby="photosTitle"
+      hidden>
+
+      <button class="back-button" data-back="choices" type="button">
+        ← Back
+      </button>
+
+      <p class="eyebrow">A LITTLE PHOTO CORNER</p>
+
+      <h2 id="photosTitle" class="script-title">
+        Little <span>moments</span>
+      </h2>
+
+      <div class="gallery" id="gallery">
+        <button class="polaroid tilt-left"
+          data-photo="assets/aisyah-4.jpeg"
+          data-caption="a lovely moment ♡"
+          type="button">
+          <span class="gallery-image">
+            <img src="assets/aisyah-4.jpeg" alt="Foto Aisyah 1" loading="lazy">
+            <span class="photo-fallback">Tambahkan<br>aisyah-4.jpeg</span>
+          </span>
+          <span class="polaroid-caption">a lovely moment ♡</span>
+        </button>
+
+        <button class="polaroid tilt-right"
+          data-photo="assets/aisyah-3.jpeg"
+          data-caption="keep shining"
+          type="button">
+          <span class="gallery-image">
+            <img src="assets/aisyah-3.jpeg" alt="Foto Aisyah 2" loading="lazy">
+            <span class="photo-fallback">Tambahkan<br>aisyah-3.jpeg</span>
+          </span>
+          <span class="polaroid-caption">keep shining</span>
+        </button>
+
+        <button class="polaroid tilt-left"
+          data-photo="assets/aisyah-2.jpeg"
+          data-caption="a day to remember"
+          type="button">
+          <span class="gallery-image">
+            <img src="assets/aisyah-2.jpeg" alt="Foto Aisyah 3" loading="lazy">
+            <span class="photo-fallback">Tambahkan<br>aisyah-2.jpeg</span>
+          </span>
+          <span class="polaroid-caption">a day to remember</span>
+        </button>
+
+        <button class="polaroid tilt-right"
+          data-photo="assets/aisyah-1.jpeg"
+          data-caption="wishing you good things"
+          type="button">
+          <span class="gallery-image">
+            <img src="assets/aisyah-1.jpeg" alt="Foto Aisyah 4" loading="lazy">
+            <span class="photo-fallback">Tambahkan<br>aisyah-1.jpeg</span>
+          </span>
+          <span class="polaroid-caption">wishing you good things</span>
+        </button>
+      </div>
+
+      <p class="tiny-note">Tekan foto untuk melihatnya lebih besar.</p>
+    </section>
+
+    <!-- LAYAR 5: UCAPAN -->
+    <section class="screen content-screen"
+      id="screen-wishes"
+      aria-labelledby="wishesTitle"
+      hidden>
+
+      <button class="back-button" data-back="choices" type="button">
+        ← Back
+      </button>
+
+      <p class="eyebrow">A NOTE, FROM THE HEART</p>
+
+      <h2 id="wishesTitle" class="script-title">
+        Dear <span>Aisyah Aini,</span>
+      </h2>
+
+      <article class="letter-card">
+        <div class="letter-top">
+          <span>FOR YOUR SPECIAL DAY</span>
+          <span>♡</span>
+        </div>
+
+        <div class="letter-body">
+          <p>Selamat ulang tahun, Aisyah Aini! 🤍</p>
+
+          <p>Selamat bertambah usia yang ke 20 yaaa syahhh. Semoga di umur yang baru ini kamu selalu diberi kesehatan, dimudahkan segala urusannya, diberi kesabaran dalam menghadapi apa pun, makin taat ibadahnya dan tentunya selalu bahagia.</p>
+
+          <p>Semoga apa pun yang lagi kamu usahain sekarang bisa tercapai satu persatu yaa. Kalau nanti ada hari-hari yang kerasa berat, semoga kamu selalu diberi kekuatan buat nglewatinya. Jangan lupa juga buat tetap sayang sama dirimu sendiri, menghargai setiap proses yang udah kamu lewati dan jangan terlalu memaksakan diri kalau emang lagi capek.</p>
+
+          <p>Aku seneng kita masih bisa menjaga hubungan baik sampe sekarang. Di hari spesialmu ini, aku cuma berharap semoga kamu selalu dikelilingi orang-orang yang tulus, dipertemukan sama banyak hal baik, punya kesempatan buat mencoba hal-hal baru dan makin dekat sama apa yang selama ini kamu impikan. Semoga ke depannya ada lebih banyak alasan buat kamu tersenyum, lebih banyak hal yang bisa kamu syukuri dan tentunya lebih banyak kebahagiaan yang kamu rasain.</p>
+
+          <p>Sekali lagi selamat bertambah usia, Aisyah Aini. Semoga tahun ini membawa banyak cerita baik, hati yang lebih tenang dan kebahagiaan yang terasa berarti.</p>
+
+          <p>Terima kasih yaa, udah pernah jadi bagian yang berarti dalam hidup aku. Aku harap hal-hal baik selalu dateng ke hidup kamu, bukan cuma hari ini, tapi juga di hari-hari berikutnya.</p>
+
+          <p class="letter-signoff">
+            Jaga diri baik-baik, yaaaaa......
+            <br>
+            <span>from Fairuz Alif Maghribi ♡</span>
+          </p>
+        </div>
+
+        <div class="letter-bottom">sincerely, with no expectations</div>
+      </article>
+    </section>
+
+    <!-- LAYAR 6: MUSIK -->
+    <section class="screen content-screen playlist-screen"
+      id="screen-playlist"
+      aria-labelledby="playlistTitle"
+      hidden>
+
+      <button class="back-button" data-back="choices" type="button">
+        ← Back
+      </button>
+
+      <p class="eyebrow">A LITTLE SOUNDTRACK</p>
+
+      <h2 id="playlistTitle" class="script-title">
+        A song for <span>your day</span>
+      </h2>
+
+      <p class="soft-copy">
+        semoga aja kamu seneng dengerinnya hihi
+      </p>
+
+      <div class="record-player">
+        <div class="record" id="record">
+          <div class="record-center">♡</div>
+        </div>
+
+        <p class="track-title" id="trackTitle">About You</p>
+
+        <p class="track-subtitle">
+          The 1975 · for Aisyah Aini
+        </p>
+
+        <!-- Tombol musik berada di halaman playlist -->
+        <!-- Elemen audio sendiri berada di luar semua halaman -->
+
+        <button class="play-button"
+          id="playButton"
+          type="button"
+          aria-pressed="false">
+          <span id="playIcon">▶</span>
+          <span id="playText">Play music</span>
+        </button>
+      </div>
+
+      <p class="tiny-note">
+        Tekan tombol musik untuk memutar atau menjeda lagu.
+      </p>
+    </section>
+
+    <!-- CATATAN PENUTUP -->
+    <section class="closing-note" id="closingNote" hidden>
+      <span>♡</span>
+      <p>Semoga banyak hal baik menemukanmu, Aisyah Aini.</p>
+      <button class="text-button" id="backToChoices" type="button">
+        Kembali ke pilihan
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>made with love</span>
+    <span>♡</span>
+    <span>for Aisyah Aini</span>
+  </footer>
+
+  <!-- AUDIO GLOBAL: JANGAN PINDAHKAN KE DALAM SECTION -->
+  <!-- Audio tetap hidup meskipun halaman playlist disembunyikan -->
+  <audio id="birthdayAudio" preload="metadata" loop>
+    <source
+      src="assets/The 1975 - About You (official).mp3"
+      type="audio/mpeg">
+  </audio>
+
+  <!-- LIGHTBOX FOTO -->
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="closeLightbox"
+      type="button" aria-label="Tutup foto">×</button>
+    <img id="lightboxImage" src="" alt="Foto diperbesar">
+    <p id="lightboxCaption"></p>
+  </dialog>
+
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+</body>
+</html>
